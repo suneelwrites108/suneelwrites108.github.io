@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sudipta Das — Bengali Writer & Editor. কবিতা, গল্প, প্রবন্ধ ও সৃজনশীল লেখার অনলাইন ঠিকানা।">
+  <meta name="theme-color" content="#101010">
+  <title>Sudipta Das | Bengali Writer & Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#101010;--panel:#191919;--panel2:#202020;--text:#f4f0e9;--muted:#aaa39a;--red:#c94b43;--line:#303030;--serif:"Noto Serif Bengali",serif;--sans:"DM Sans",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#101010eF;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;letter-spacing:.3px}.brand span{color:var(--red)}
+    .links{display:flex;gap:28px;align-items:center;font-size:14px;color:#d4cec5}.links a:hover{color:#fff}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:8px;padding:8px 12px}
+    .hero{padding:105px 0 92px;background:radial-gradient(ellipse at 82% 22%,#6d282322,transparent 34%),linear-gradient(135deg,#151515,#101010 65%)}
+    .eyebrow{color:#e17b72;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.12;letter-spacing:-2px;margin:22px 0 18px;max-width:800px}
+    h1 .accent{color:var(--red)}.hero p{max-width:650px;color:#c2bbb2;font-family:var(--serif);font-size:19px;line-height:2}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;padding:12px 20px;border-radius:6px;border:1px solid var(--red);background:var(--red);color:white;font-weight:600;font-size:14px}.btn.secondary{background:transparent;border-color:#555;color:#eee}
+    section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}
+    h2{font-size:30px;margin:8px 0 0;letter-spacing:-.5px}.sub{color:var(--muted);font-size:14px;max-width:520px}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:start}.about-copy{font-family:var(--serif);font-size:17px;color:#d0c9c0;line-height:2.1}.note{background:var(--panel);border:1px solid var(--line);padding:28px;border-radius:10px}.note strong{color:#fff}.note p{color:var(--muted);margin-bottom:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px;min-height:190px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#75413e}.tag{font-size:11px;letter-spacing:1.5px;color:#e17b72;text-transform:uppercase}.card h3{font-family:var(--serif);font-size:21px;margin:14px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .writing-list{display:grid;gap:12px}.writing{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:20px 22px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.writing h3{font-family:var(--serif);font-size:18px;margin:0 0 5px}.writing p{margin:0;color:var(--muted);font-size:13px}.empty{padding:24px;border:1px dashed #4a4a4a;border-radius:8px;color:var(--muted);font-family:var(--serif)}
+    .contact{background:linear-gradient(120deg,#211514,#171313);border:1px solid #50302e;border-radius:12px;padding:36px;display:flex;justify-content:space-between;gap:25px;align-items:center}.contact p{color:#c5b9b2;margin-bottom:0}.contact .btn{white-space:nowrap}
+    footer{padding:28px 0;color:#888;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.menu{display:block}.links{display:none;position:absolute;top:76px;left:0;right:0;background:#151515;padding:18px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.hero{padding:76px 0 68px}.about-grid{grid-template-columns:1fr;gap:22px}.cards{grid-template-columns:1fr}.section-head{display:block}.contact{display:block}.contact .btn{margin-top:20px}.writing{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">SUNEEL <span>WRITES.</span></a>
+    <button class="menu" id="menuBtn" aria-label="মেনু খুলুন" aria-expanded="false">Menu ☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#about">পরিচিতি</a><a href="#work">লেখালেখি</a><a href="#categories">বিভাগ</a><a href="#contact">যোগাযোগ</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home" style="border:0">
+    <div class="wrap">
+      <div class="eyebrow">Suneel Writes · Bengali Writer &amp; Editor</div>
+      <h1>শব্দের ভেতরেই<br><span class="accent">আমার</span> পৃথিবী।</h1>
+      <p>ভাবনা, অনুভূতি আর জীবনের ছোট ছোট গল্প—শব্দের মাধ্যমে তাদের নতুন করে আবিষ্কার করার এক ব্যক্তিগত ঠিকানা।</p>
+      <div class="actions"><a class="btn" href="#work">লেখা পড়ুন ↗</a><a class="btn secondary" href="#about">আমার সম্পর্কে</a></div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">A little introduction</div><h2>লেখকের পরিচয়</h2></div></div>
+      <div class="about-grid">
+        <div class="about-copy">আমি সুদীপ্ত দাস। বাংলা ভাষা, সাহিত্য এবং সৃজনশীল লেখালেখির প্রতি ভালোবাসা থেকেই এই ওয়েবসাইটের শুরু। এখানে আমার নির্বাচিত কবিতা, গল্প, প্রবন্ধ এবং নানা ভাবনা এক জায়গায় সাজিয়ে রাখব।</div>
+        <aside class="note"><strong>এই ওয়েবসাইটের উদ্দেশ্য</strong><p>নিজের লেখা পাঠকের কাছে পৌঁছে দেওয়া, নতুন লেখা প্রকাশ করা এবং বাংলা ভাষার সঙ্গে একটি সুন্দর অনলাইন সংযোগ তৈরি করা।</p></aside>
+      </div>
+    </div>
+  </section>
+  <section id="categories">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Explore</div><h2>লেখার বিভাগ</h2></div><p class="sub">বিভিন্ন ধরনের লেখা এক জায়গায়—নতুন লেখা ধীরে ধীরে এখানে যুক্ত হবে।</p></div>
+      <div class="cards">
+        <article class="card"><div class="tag">01 / Poetry</div><h3>কবিতা</h3><p>অনুভূতি, সম্পর্ক, সময় আর জীবনের কথা—কবিতার ভাষায়।</p></article>
+        <article class="card"><div class="tag">02 / Fiction</div><h3>গল্প</h3><p>মানুষ, সমাজ ও বাস্তবতার নানা দিক নিয়ে ছোটগল্প।</p></article>
+        <article class="card"><div class="tag">03 / Essays</div><h3>প্রবন্ধ ও ভাবনা</h3><p>সমাজ, সংস্কৃতি, সাহিত্য এবং সমসাময়িক ভাবনার লেখা।</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Selected writing</div><h2>সাম্প্রতিক লেখা</h2></div></div>
+      <div class="empty">এখানে তোমার প্রথম কবিতা, গল্প বা প্রবন্ধ প্রকাশ করা হবে। লেখা পাঠালে আমি এই অংশটি সুন্দরভাবে সাজিয়ে দেব।</div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact"><div><div class="eyebrow">Get in touch</div><h2>যোগাযোগ করতে চাও?</h2><p>লেখা, সহযোগিতা বা মতামতের জন্য যোগাযোগ করতে পারো।</p></div><a class="btn" href="mailto:hello@example.com?subject=Website%20enquiry">ইমেল করুন ↗</a></div>
+      <p class="sub" style="margin-top:12px">নোট: প্রকাশের আগে এখানে তোমার আসল ইমেল ঠিকানা বসাতে হবে।</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Suneel Writes · Sudipta Das. All rights reserved.</span><span>Made with words &amp; imagination.</span></div></footer>
+<script>
+  const menuBtn=document.getElementById('menuBtn');
+  const navLinks=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
